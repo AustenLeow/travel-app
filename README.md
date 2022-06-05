@@ -32,7 +32,7 @@ Budget Calculator - recommends users to remove activities based on their budget
 2. Tour Guides & Services Marketplace: 
 Star ratings,
 Specialisations eg languages, expertise
-3. Travel tips
+3. Travel tips:
 Recommended packing guides (packing list - recommend users what to bring, etc; quantity),
 Itinerary reminders & tips 
 - Useful information about singapore (wifi connectivity)
