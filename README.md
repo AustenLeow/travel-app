@@ -29,7 +29,7 @@ Scope : Local (for travellers coming to Singapore)
 Displays a suggested list of itinerary packages, 
 Allows for user input to edit the packages to make it more personalised,
 Budget Calculator - recommends users to remove activities based on their budget
-2. Tour Guides & Services Marketplace: 
+2. Tour Guides Marketplace: 
 Star ratings,
 Specialisations eg languages, expertise
 3. Travel tips:
