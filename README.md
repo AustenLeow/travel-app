@@ -25,15 +25,15 @@ After choosing the package, the itinerary of the whole trip is displayed to them
 Features
 Scope : Local (for travellers coming to Singapore)
 
-1. Travel Planner
-Displays a suggested list of itinerary packages 
-Allows for user input to edit the packages to make it more personalised
+1. Travel Planner:
+Displays a suggested list of itinerary packages, 
+Allows for user input to edit the packages to make it more personalised,
 Budget Calculator - recommends users to remove activities based on their budget
-2. Tour Guides & Services Marketplace 
-Star ratings
+2. Tour Guides & Services Marketplace: 
+Star ratings,
 Specialisations eg languages, expertise
-3. Travel & Itinerary Activities Checklist (miscellaneous)
-Recommended packing guides (packing list - recommend users what to bring, etc; quantity)
+3. Travel tips
+Recommended packing guides (packing list - recommend users what to bring, etc; quantity),
 Itinerary reminders & tips 
 - Useful information about singapore (wifi connectivity)
 - Tax refund
