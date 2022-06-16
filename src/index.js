@@ -19,6 +19,7 @@ import TripPackages from "./Pages/TripPackages";
 import About from "./Pages/About";
 import TravelTips from './Pages/TravelTips';
 import AuthPage from "./Pages/AuthPage";
+import Profile from "./Pages/Profile";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -34,6 +35,7 @@ root.render(
         <Route path="/about" element={<About/>} />
         <Route path="/TravelTips" element={<TravelTips/>} />
         <Route path="/auth" element={<AuthPage />} />
+        <Route path='/profile' element={<Profile />} />
       </Routes>
     </BrowserRouter>
   </AuthContextProvider>

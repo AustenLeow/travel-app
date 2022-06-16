@@ -42,9 +42,22 @@ function Header(props) {
                 className="nav-links"
                 onClick={handleClick}
               >
-                About
+                About us
               </NavLink>
             </li>
+            {isLoggedIn && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/profile"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  Settings
+                </NavLink>
+              </li>
+            )}
             {/* <li className="nav-item">
               <NavLink
                 exact
