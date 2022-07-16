@@ -18,25 +18,29 @@ import About from "./Pages/About";
 import TravelTips from './Pages/TravelTips';
 import BigDiscountForFamilies from './Pages/BigDiscountForFamilies';
 import MarinaExperience from './Pages/MarinaExperience';
+import {Account} from "./components/cognito-api/Account"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<App />} />
-        <Route path="/login" element={< LoginPage/>} /> 
-        <Route path="/signup" element ={<SignupPage/>} />
-        <Route path="/tourguide" element={<TourGuide />} />
-        <Route path="/Mytrips" element={<TripsPages />} />
-        <Route path="/trippackage" element={<TripPackages />} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/TravelTips" element={<TravelTips/>} />
-        <Route path="/bigdiscountforfamilies" element={<BigDiscountForFamilies />} />
-        <Route path="/trippackage/MarinaExperience" element={<MarinaExperience />} />
-      </Routes>
-    </BrowserRouter>
+    <Account>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<App />} />
+          <Route path="/login" element={< LoginPage/>} /> 
+          <Route path="/signup" element ={<SignupPage/>} />
+          <Route path="/tourguide" element={<TourGuide />} />
+          <Route path="/Mytrips" element={<TripsPages />} />
+          <Route path="/trippackage" element={<TripPackages />} />
+          <Route path="/about" element={<About/>} />
+          <Route path="/TravelTips" element={<TravelTips/>} />
+          <Route path="/bigdiscountforfamilies" element={<BigDiscountForFamilies />} />
+          <Route path="/trippackage/MarinaExperience" element={<MarinaExperience />} />
+        </Routes>
+      </BrowserRouter>
+    </Account>
   </React.StrictMode>
+
 );
 
 // If you want to start measuring performance in your app, pass a function
