@@ -28,8 +28,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/about"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 About
@@ -39,8 +38,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/signup"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Sign up
@@ -50,8 +48,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/login"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Log in
@@ -72,8 +69,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/trippackage"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Trip packages
@@ -83,8 +79,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/tourguide"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Tour Guides
@@ -94,8 +89,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/traveltips"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Travel Tips
@@ -105,8 +99,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/mytrips"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 My Trips

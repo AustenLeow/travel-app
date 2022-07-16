@@ -29,7 +29,7 @@ function TripPackageHome() {
                         price="$200/night"
                         
                 ></Card>
-                <p><button class = "button">Add to Cart 🛒</button></p>
+                <p><button className = "button">Add to Cart 🛒</button></p>
                     </NavLink>
             <Card
                 src={sentosa}
