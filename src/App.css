@@ -11,7 +11,7 @@
 }
 
 .LoginPage-Main {
-  background: url('C:/Users/t4n2h/Desktop/Heap/TravelApp/travel-app2/src/images/girlhotair.jpg');
+  background: url('./images/girlhotair.jpg');
   background-size: cover;
   min-height: 100vh;
   overflow: hidden;
