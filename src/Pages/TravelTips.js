@@ -15,6 +15,7 @@ function TravelTips(props) {
     <div className="App">
       <Header />
       <div className="App-body">
+        
         <li>Welcome to Travel Tips!</li>
         <li>This is a website that will help you find the best trip for you!</li>
         <li>You can search for a trip by city, or by trip type.</li>

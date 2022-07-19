@@ -7,7 +7,7 @@ import TourGuideHome from "../components/TourGuideHome"
 
 
 function TourGuide(props) {
-
+  
   const navigate = useNavigate();
 
   const [query, setQuery] = useState("");
