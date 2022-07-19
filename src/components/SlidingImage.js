@@ -23,12 +23,6 @@ const SlidingImage = (props) => {
   const {product, onAdd} = props;
   const axios = require('axios');
   
-
-  // axios.use((req, res, next) => {
-  //   res.header('Access-Control-Allow-Origin', '*');
-  //   next();
-  // });
-
   const { getItemQuantity , increaseCartQuantity, decreaseCartQuantity, removeFromCart} = useShoppingCart()
   const quantity = getItemQuantity(1); 
   return (
@@ -44,7 +38,7 @@ const SlidingImage = (props) => {
       {/* <p><button className = "button" onClick={() => axios.post("heap-travelapp.herokuapp.com/api/v1/user", [{"email":"soonann.2021@scis.smu.edu.sg","firstName":"Soon Ann","lastName":"Tan","mobile":"91111111","customTripList":[],"doB":null}]).then(function (response) {
     console.log(response);
   })}>Add to Cart 🛒</button></p> */}
-    <p><button className = "button" onClick={() => axios.post("http://heap-travelapp.herokuapp.com/api/v1/premadetrip", 
+    <p><button className = "button" onClick={() => axios.post("/api/v1/premadetrip", 
     [{"tripItemDays":"1",
     "tripItemDescription":"My first trip","tripItemTime":{
       "hour": 10,
