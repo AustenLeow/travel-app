@@ -1,0 +1,241 @@
+
+.App {
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.LoginPage-Main {
+  background: url('./images/girlhotair.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.LoginPage-Main-1{
+  padding: 15px 14px 16px 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(246, 246, 246, 1),
+      rgba(246, 246, 246, 1)
+    ),
+    url(https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/am5artmnfi4-I1%3A3312%3B1%3A8?alt=media&token=221a4f11-e07f-4864-8262-817538852704);
+  background-size: 100% 100%;
+  border: 1px solid rgba(232, 232, 232, 1);
+  width: fit-content;
+  position: relative;
+  top : 50%;
+  left: 40%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.LoginPage-Main-2{
+  padding: 15px 14px 16px 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  background: linear-gradient(
+      0deg,
+      rgba(246, 246, 246, 1),
+      rgba(246, 246, 246, 1)
+    ),
+    url(https://firebasestorage.googleapis.com/v0/b/unify-bc2ad.appspot.com/o/am5artmnfi4-I1%3A3312%3B1%3A8?alt=media&token=221a4f11-e07f-4864-8262-817538852704);
+  background-size: 100% 100%;
+  border: 1px solid rgba(232, 232, 232, 1);
+  width: fit-content;
+  position: relative;
+  top : 50%;
+  left: 40%;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.Login{
+  position: relative;
+  top : 50%;
+  left: 48%;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Signup{
+  position: relative;
+  top : 50%;
+  left: 48%;
+  justify-content: center;
+  align-items: center;
+}
+
+.LoginQuestion {
+  position: relative;
+  top : 50%;
+  left: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  position: absolute;
+  left: 0px;
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.navbar {
+  background-color: #2b7378;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  
+}
+
+.navbar-lower {
+  background-color: #2b7378;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  -webkit-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+  box-shadow: 0px -4px 3px rgba(50, 50, 50, 0.75);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  max-width: 1500px;
+  
+}
+
+.nav-container-lower {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  max-width: 1500px;
+  
+}
+
+.nav-logo {
+  color: #f5b921;
+  align-items: center;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  flex-grow: 1;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  margin-right: 2rem;
+}
+
+.nav-links {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  height: 100%;
+  border-bottom: 3px solid transparent;
+}
+.fa-code {
+  margin-left: 1rem;
+}
+
+.nav-item {
+  line-height: 40px;
+  margin-right: 1rem;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0;
+  background: transparent;
+  transition: width 0.7s ease, background-color 0.5s ease;
+}
+
+.nav-item:hover:after {
+  width: 100%;
+  background: #ffdd40;
+}
+
+.nav-item .active {
+  color: #ffdd40;
+  border: 1px solid #ffdd40;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #fff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+    background: #1f5156;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+
+  .nav-item .active {
+    color: #ffdd40;
+    border: none;
+  }
+  .nav-links {
+    padding: 1.5rem;
+    width: 100%;
+    display: table;
+  }
+
+  .nav-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #ffdd40;
+  }
+}
