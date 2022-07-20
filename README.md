@@ -1,48 +1,70 @@
-# travel-app
+# Getting Started with Create React App
 
-Motivation 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-After 2 years of covid, many Singaporeans, including us, have yearned to travel once more. With many tour guides and tour agencies down, many are left with only google to search up on other countries. However, searching for information to settle their travelling logistics can be very daunting and time-consuming. Hence, creating a very troublesome experience for tourists.    
+## Available Scripts
 
-Most online travel planners now mostly require users to go through the long rigorous process of picking their preferred places of travel/stay from a long list of suggestions with ratings. The troublesome process of having to pick and customise the things they want in their short getaway trip, is something they might not have time for due to busy schedules in their work life.
+In the project directory, you can run:
 
+### `npm start`
 
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-Project Aim 
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-We hope to simplify this process by providing users with a selection of fixed itineraries, which they can personalise by checking the things they want. 
+### `npm test`
 
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
+### `npm run build`
 
-User Stories (optional)
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-As a user of the application, the user will be able to see many different packages for a specific country/city. They can choose which package they want to take up.
-After choosing the package, the itinerary of the whole trip is displayed to them and then they have the option to choose which activities they want/do not want to do. After which, they are required to pay a deposit and pay an amount depending on what they chose to do for their trip.
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
+### `npm run eject`
 
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-Features
-Scope : Local (for travellers coming to Singapore)
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-1. Travel Planner:
-Displays a suggested list of itinerary packages, 
-Allows for user input to edit the packages to make it more personalised,
-Budget Calculator - recommends users to remove activities based on their budget
-2. Tour Guides Marketplace: 
-Star ratings,
-Specialisations eg languages, expertise
-3. Travel tips:
-Recommended packing guides (packing list - recommend users what to bring, etc; quantity),
-Itinerary reminders & tips 
-- Useful information about singapore (wifi connectivity)
-- Tax refund
-- Apps that are recommended
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
+## Learn More
 
-Tech Stack (optional)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-- Frontend: React
-- Backend: Springboot
-- Database: Mysql
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
