@@ -7,25 +7,36 @@ import UserPool from "../components/cognito-api/UserPool";
 import { AccountContext } from "../components/cognito-api/Account";
 
 function SignupPage() {
-  const url = "heap-travelapp.herokuapp.com/api/v1/user";
+  // const url = "heap-travelapp.herokuapp.com/api/v1/user";
 
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
 
-  const {signUp} = useContext(AccountContext)
+  const {signUp} = useContext(AccountContext);
 
-  const Login = (details) => {
-    console.log(details);
-  };
+  // const Login = (details) => {
+  //   console.log(details);
+  // };
 
-  const Logout = () => {
-    console.log("Logout");
-  };
+  // const Logout = () => {
+  //   console.log("Logout");
+  // };
 
   const submit = (e) => {
     e.preventDefault();
+    
     signUp(email, password)
+    .then(data => {
+      console.log("Signed up!", data)
+      navigate('/login');
+      alert("Success! Go and log in now!");
+    }).catch(err => {
+      alert("Invalid username/password!");
+      console.error(err);
+    });
+    
+
     // try {
     //   const resp = Axios.post(url, {
     //     email: email,
