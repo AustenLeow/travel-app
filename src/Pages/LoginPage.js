@@ -8,29 +8,32 @@ import { AccountContext } from "../components/cognito-api/Account"
 import Status from "../components/cognito-api/Status"
 
 function LoginPage(props) {
-  const url = "heap-travelapp.herokuapp.com/api/v1/user";
+  // const url = "heap-travelapp.herokuapp.com/api/v1/user";
 
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  const { authenticate } = useContext(AccountContext)
+  const { authenticate } = useContext(AccountContext);
 
-  const Login = (details) => {
-    console.log(details);
-  };
+  // const Login = (details) => {
+  //   console.log(details);
+  // };
 
-  const Logout = () => {
-    console.log("Logout");
-  };
+  // const Logout = () => {
+  //   console.log("Logout");
+  // };
 
   const submit = (e) => {
     e.preventDefault();
 
-    authenticate(email, password).then(data => {
-      console.log("Logged In!", data)
+    authenticate(email, password)
+      .then(data => {
+      // console.log("Logged In!", data);
+      navigate('/');
     }).catch(err => {
-      console.error(err)
-    })
+      console.error(err);
+      alert("Invalid username/password!");
+    });
     
     // try {
     //   const resp = Axios.post(url, {
