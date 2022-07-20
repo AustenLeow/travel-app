@@ -1,12 +1,20 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
+import Status from "./cognito-api/Status";
+import { AccountContext } from "../components/cognito-api/Account";
 
 function Header(props) {
+
+  const authctx = useContext(AccountContext);
+  const isLoggedIn = authctx.isLoggedIn;
+  const logOutHandler = () => {
+    authctx.logout();
+  }
+
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
-
   const [query, setQuery] = useState("");
+
   return (
     <>
       <nav className="navbar">
@@ -26,7 +34,7 @@ function Header(props) {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/about"
                 className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
@@ -34,26 +42,40 @@ function Header(props) {
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/signup"
-                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
-                onClick={handleClick}
-              >
-                Sign up
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/login"
-                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
-                onClick={handleClick}
-              >
-                Log in
-              </NavLink>
-            </li>
+            {!isLoggedIn && (
+              <li className="nav-item">
+                <NavLink
+                  
+                  to="/signup"
+                  className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
+                  onClick={handleClick}
+                >
+                  Sign up
+                </NavLink>
+              </li> 
+              )}
+              {!isLoggedIn && (
+                <li className="nav-item">
+                <NavLink
+                  
+                  to="/login"
+                  className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
+                  onClick={handleClick}
+                >
+                  Log in
+                </NavLink>
+              </li> 
+              )}
+              {isLoggedIn && (
+                <li>
+                <NavLink
+                  to="/"
+                  onClick={logOutHandler}
+                >
+                  <Status />
+                </NavLink>
+              </li> )}
+
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
