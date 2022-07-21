@@ -13,12 +13,42 @@ code {
 }
 
 .footer {
-  margin-top: 100px;
+  margin-top: 200px;
   padding: 1rem;
   background-color: #2b7378;
   /* position: fixed; */
   bottom: 0;
-  text-align: center;
+  
   width: 100%;
   color: #fff;
+}
+
+.footer p {
+  text-align: center;
+}
+
+p {
+  margin-left: 200px;
+  margin-right: 200px;
+  text-align: justify;
+}
+
+h1 {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 100px;
+  margin-bottom: 10px;
+  color: #2b7378;
+}
+
+.card {
+  color: white;
+  background-color: #2b7378;
+  margin-left: 50px;
+  margin-right: 50px;
+  
+}
+
+a {
+  text-decoration: none;
 }

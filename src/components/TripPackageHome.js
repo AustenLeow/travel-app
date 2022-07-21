@@ -35,7 +35,7 @@ function TripPackageHome() {
         <NavLink exact to="/trippackage/HistoryThrill" onClick={handleClick}>
             <Card
              src={fortcanning}
-             title="History Trills"
+             title="History Thrills"
              description="Experience the history of Singapore with a guided tour at Fort Canning Park"
              price="$20/session"
              />
