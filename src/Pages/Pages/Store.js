@@ -1,1 +1,0 @@
-var removeCartItemButton = document.getElementsByClassName("")
