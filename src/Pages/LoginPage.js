@@ -7,43 +7,25 @@ import wanderlust from "./../images/Wanderlust.jpg";
 import { AccountContext } from "../components/cognito-api/Account"
 import Status from "../components/cognito-api/Status"
 
-
 function LoginPage(props) {
-  const url = "heap-travelapp.herokuapp.com/api/v1/user";
+  // const url = "heap-travelapp.herokuapp.com/api/v1/user";
 
   const navigate = useNavigate();
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
-  const { authenticate } = useContext(AccountContext)
-  
-  
-
-  const Login = (details) => {
-    localStorage.setItem("Token",details.accessToken.jwtToken)
-    console.log(details);
-  };
-
-  const Logout = () => {
-    console.log("Logout");
-  };
+  const { authenticate } = useContext(AccountContext);
 
   const submit = (e) => {
     e.preventDefault();
 
-    authenticate(email, password).then(data => {
-      console.log("Logged In!", data)
+    authenticate(email, password)
+      .then(data => {
+      // console.log("Logged In!", data);
+      navigate('/');
     }).catch(err => {
-      console.error(err)
-    })
-    
-    // try {
-    //   const resp = Axios.post(url, {
-    //     email: email,
-    //     password: password,
-    //   });
-    // } catch (error) {
-    //   console.log(error.response);
-    // }
+      alert("Invalid username/password!");
+      console.error(err);
+    });
 
   }
 
