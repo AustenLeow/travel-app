@@ -30,11 +30,13 @@ import RelaxInLuxury from './Pages/RelaxInLuxury';
 import Hawker from './Pages/Hawker';
 import Cart from './Pages/Cart';
 import { ShoppingCartProvider } from './context/ShoppingCartContext.tsx';
-
+import {Account} from "./components/cognito-api/Account"
+import Footer from './Pages/Footer';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <Account>
     <ShoppingCartProvider>
     <BrowserRouter>
       <Routes>
@@ -62,7 +64,8 @@ root.render(
       </Routes>
     </BrowserRouter>
     </ShoppingCartProvider>
-    
+    </Account>
+    <Footer />
   </React.StrictMode>
 );
 
