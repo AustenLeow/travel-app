@@ -10,8 +10,6 @@ import Status from "../components/cognito-api/Status"
 
 function Cart(props) {
 
-
-
   const { addItem } = useCart();
 
   const products = [
@@ -43,8 +41,6 @@ function Cart(props) {
     removeItem,
   } = useCart();
 
-
-  
   function get() {
     const token =
     localStorage.getItem("Token")
@@ -67,8 +63,6 @@ function Cart(props) {
       }
     }
   }
-
-
 
   return (
     <div className="App">
