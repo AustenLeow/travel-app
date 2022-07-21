@@ -1,23 +1,19 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
-import axios from "axios";
+import Status from "./cognito-api/Status";
+import { AccountContext } from "../components/cognito-api/Account";
 
 function Header(props) {
+
+  const authctx = useContext(AccountContext);
+  const isLoggedIn = authctx.isLoggedIn;
+  const logOutHandler = () => {
+    authctx.logout();
+  }
+
   const [click, setClick] = useState(false);
-
   const handleClick = () => setClick(!click);
-
   const [query, setQuery] = useState("");
-  // const token ="eyJraWQiOiI3dXlNa0NuYlp3bDRNNzdLbW13VWpvZlZYRGcxNGhiVWRhU1k4Y0VYOVNnPSIsImFsZyI6IlJTMjU2In0.eyJzdWIiOiJiZjAwNTViOS05MDhiLTQxODktYTkyZi05NDgzMTU4YTJkNDUiLCJpc3MiOiJodHRwczpcL1wvY29nbml0by1pZHAuYXAtc291dGhlYXN0LTEuYW1hem9uYXdzLmNvbVwvYXAtc291dGhlYXN0LTFfTVpiMEN4WnpBIiwiY2xpZW50X2lkIjoiM3VyNWM4amNsZzVpa2k0ajl0dXZvcjVrNzQiLCJvcmlnaW5fanRpIjoiOTIzZWI3YTUtYjY3ZC00ZWE4LTkyNjctNGVhOWUxM2NkNTQ3IiwiZXZlbnRfaWQiOiJmMzAzNGQ0Ni01NzA1LTRiODAtYjIyNi1jMjdkYWM5NDdkN2YiLCJ0b2tlbl91c2UiOiJhY2Nlc3MiLCJzY29wZSI6ImF3cy5jb2duaXRvLnNpZ25pbi51c2VyLmFkbWluIiwiYXV0aF90aW1lIjoxNjU4MzI5MzQ2LCJleHAiOjE2NTgzMzI5NDYsImlhdCI6MTY1ODMyOTM0NiwianRpIjoiNWQ2MzliN2YtYWRkNy00NjlkLTkzOTgtODIzNmEyMWE0OWFmIiwidXNlcm5hbWUiOiJiZjAwNTViOS05MDhiLTQxODktYTkyZi05NDgzMTU4YTJkNDUifQ.XpfzCwRJlc-V8Tdncu_1HhNy19uq3uTvZzRvbjedqbuL3lGageVhs0uTLhGrQKVkjQUC_6ZRrbe2oF_Q2Mh0ss9nG9MauwzIbWpYc_1bg9CR1_r2YTiOUA_uJ2vocahTeIltVMb0x8LWwAM9E3M3GzM2WA8Kt84mBhQnMAvReU3hbQwltdtpOFb-QuxWazRV6GsqpxMXM_BuPBroTmKJt_RD5hfvhVQvktY34K-btdVh7ijhMCkAmEoRJsgRsRT3TAvBOPCfY19l8ZlCTwPLF4qNh1Jn0K2iZ6k_7gbwS5G7I2ENqGbHae7GSTkkx-guV-_C6_ekoLadc-AE2Wcvmw"
-  // const config = {
-  //   headers: {
-  //     Authorization: `Bearer ${token}`} 
-  //   }
-
-  //   axios.get(
-  //     `/api/v1/user`,
-  //     config
-  //   ).then(data => console.log(data.data))
 
   return (
     <>
@@ -38,48 +34,63 @@ function Header(props) {
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
               <NavLink
-                exact
+                
                 to="/about"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/signup"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Sign up
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/login"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Log in
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink
-                exact
-                to="/Cart"
-                activeClassName="active"
-                className="nav-links"
-                onClick={handleClick}
-              >
-                Cart
-              </NavLink>
-            </li>
+            {isLoggedIn && (
+              <li className="nav-item">
+                <NavLink
+                  exact
+                  to="/Cart"
+                  activeClassName="active"
+                  className="nav-links"
+                  onClick={handleClick}
+                >
+                  My Cart
+                </NavLink>
+              </li>
+            )}
+            {!isLoggedIn && (
+              <li className="nav-item">
+                <NavLink
+                  
+                  to="/signup"
+                  className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
+                  onClick={handleClick}
+                >
+                  Sign up
+                </NavLink>
+              </li> 
+              )}
+              {!isLoggedIn && (
+                <li className="nav-item">
+                <NavLink
+                  
+                  to="/login"
+                  className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
+                  onClick={handleClick}
+                >
+                  Log in
+                </NavLink>
+              </li> 
+              )}
+              {isLoggedIn && (
+                <li >
+                <NavLink
+                  to="/"
+                  
+                  onClick={logOutHandler, handleClick}
+                >
+                  <Status />
+                </NavLink>
+              </li> 
+              )}
+
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>
@@ -95,19 +106,17 @@ function Header(props) {
               <NavLink
                 exact
                 to="/trippackage"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
-                Trip packages
+                Trip Packages
               </NavLink>
             </li>
             <li className="nav-item">
               <NavLink
                 exact
                 to="/tourguide"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Tour Guides
@@ -117,8 +126,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/traveltips"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 Travel Tips
@@ -128,8 +136,7 @@ function Header(props) {
               <NavLink
                 exact
                 to="/mytrips"
-                activeClassName="active"
-                className="nav-links"
+                className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                 onClick={handleClick}
               >
                 My Trips
