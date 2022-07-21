@@ -8,14 +8,14 @@ const Status = () => {
 
   useEffect(()=>{
     getSession().then((session) => {
-      console.log("Session: ", session);
+      // console.log("Session: ", session);
       setStatus(true);
     });
   }, []);
 
   return (
     <div>
-      {status ? <button onClick={logout} >Logout</button>: "Please login"}
+      {status ? <button onClick={logout}>Logout</button>: ""}     {/* <button onClick={logout}>Logout</button> */}
     </div>
   )
 };

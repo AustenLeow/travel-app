@@ -1,7 +1,6 @@
-import React, {createContext} from "react";
-import { AuthenticationDetails, CognitoUser, Cgnito } from "amazon-cognito-identity-js";
+import React, {useState,createContext} from "react";
+import { AuthenticationDetails, CognitoUser } from "amazon-cognito-identity-js";
 import Pool from "./UserPool";
-
 
 const AccountContext = createContext();
 
@@ -16,7 +15,7 @@ const Account = (props) => {
             reject();
           }
           else {
-            resolve(session)
+            resolve(session);
           }
         });
       }
@@ -26,9 +25,9 @@ const Account = (props) => {
   }
 
   const confirmCode = (user, Username, Password) => {
-    const code = prompt("Please enter ur verification code")
+    const code = prompt("Please enter your verification code")
     user.confirmRegistration(code)
-    authenticate(Username, Password)
+    authenticate(Username, Password);
   }
 
   const authenticate = async (Username, Password) => {
@@ -36,28 +35,37 @@ const Account = (props) => {
       const user = new CognitoUser({
         Username,
         Pool
-      })
+      });
   
       const authDetails = new AuthenticationDetails({
         Username,
         Password,
-      })
+      });
   
       user.authenticateUser(authDetails, {
         onSuccess: (data) => {
-          console.log("onSuccess: ", data)
-          resolve(data)
+          console.log("onSuccess: ", data);
+          // resolve(data.getIdToken().getJwtToken());   // jwt id token is here
+          const tokens = {
+            accessToken: data.getAccessToken().getJwtToken(),
+            idToken: data.getIdToken().getJwtToken(),
+            refreshToken: data.getRefreshToken().getToken()
+          };
+          user['tokens'] = tokens;
+          console.log(user);
+          setToken(data.getIdToken().getJwtToken());
+          resolve(user);
         },
         onFailure: (err) => {
           if (err.toString().includes("UserNotConfirmedException") ){
-            confirmCode(user, Username, Password)
+            confirmCode(user, Username, Password);
           }
-          console.log("onFailure: ", err)
-          reject(err)
+          console.log("onFailure: ", err);
+          reject(err);
         },
         newPasswordRequired: (data) => {
-          console.log("newPasswordRequired: ", data)
-          resolve(data)
+          console.log("newPasswordRequired: ", data);
+          resolve(data);
         }
       })
     })
@@ -73,8 +81,10 @@ const Account = (props) => {
         console.log(data)
       }, {
         onSuccess: (data) => {
-          console.log("onSuccess: ", data)
-          resolve(data)
+          console.log("onSuccess: ", data);
+          alert("Success! Go and login now!");
+          setToken(data.getIdToken().getJwtToken());
+          resolve(data);
         },
         onFailure: (err) => {
           console.error("onFailure: ", err)
@@ -84,17 +94,27 @@ const Account = (props) => {
     })  
   };
 
+  let initialToken;
+  if (authenticate) {
+    initialToken = authenticate;
+  } 
+  // if (signUp) {
+  //   initialToken = signUp;
+  // }
+  const [token, setToken] = useState(initialToken);
+  const isLoggedIn = !!token;
+  // console.log(token);
+
   const logout = () => {
     const user = Pool.getCurrentUser();
     if (user) {
       user.signOut();
     }
-
+    setToken(null);
   }
 
-
   return (
-    <AccountContext.Provider value={{authenticate, getSession, signUp}}>
+    <AccountContext.Provider value={{authenticate, getSession, signUp, logout, isLoggedIn}}>
       {props.children}
     </AccountContext.Provider>
   )
