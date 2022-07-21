@@ -19,6 +19,7 @@ function Home() {
   return (
     <div className="home">
       <div className="home__section">
+        <h1>What we offer</h1>
         <NavLink exact to="/bigdiscountforfamilies" onClick={handleClick}>
           <Card
             src={family}
@@ -43,6 +44,7 @@ function Home() {
         
       </div>
       <div className="home__section">
+      <h1>What our users recommend</h1>
         <NavLink exact to="/NationalDayDiscount" onClick={handleClick}>
         <Card
           src={nat}
