@@ -16,6 +16,11 @@
   overflow: hidden;
 }
 
+/* .App-Query1 {
+  position: relative;
+  /* text-align: center;
+ }  */
+
 .LoginPage-Main-1{
   padding: 15px 14px 16px 15px;
   margin-bottom: 25px;
@@ -127,7 +132,7 @@
   align-items: center;
   width: 100%;
   height: 40px;
-  max-width: 1500px;
+  /* max-width: 1500px; */
   
 }
 
@@ -144,11 +149,14 @@
 .nav-logo {
   color: #f5b921;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 200px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   flex-grow: 1;
+  font-family: 'Sacramento', cursive;
+  font-weight: bold;
+  text-align: left;
 }
 
 .nav-menu {
