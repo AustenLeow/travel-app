@@ -25,28 +25,20 @@ const SlidingImageZoo = () => {
         Authorization: `Bearer ${token}`} 
       }
   
-      const iJSON =  ({
-        "premadeTripItems": [
-          {
-            "tripItemDays": 0,
-            "tripItemDescription": "string",
-            "tripItemId": 3,
-            "tripItemTime": "21:12:00"
-          }
-        ],
+      const iJSON =  {
         "tripCode": "Zoo",
         "tripCountry": "Singapore",
-        "tripDuration": 3,
+        "tripDuration": 5,
         "tripItemsList": [
           {
-            "tripItemDays": 1,
-            "tripItemDescription": "string",
-            "tripItemId": 0,
-            "tripItemTime": "21:12:00"
+            "tripItemDays": 2,
+            "tripItemDescription": "Zoo in Singapore",
+            "tripItemId": 3,
+            "tripItemTime": "10:00:00"
           }
         ],
         "tripName": "string"
-      });
+      };
   
       axios.post(
         `/api/v1/premadetrip`, 

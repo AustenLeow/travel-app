@@ -28,12 +28,12 @@ const SlidingImagePulauUbin = () => {
       const iJSON =  {
         "tripCode": "Pulau",
         "tripCountry": "Singapore",
-        "tripDuration": 5,
+        "tripDuration": 8,
         "tripItemsList": [
           {
             "tripItemDays": 1,
-            "tripItemDescription": "Discover Ubin,Singapore",
-            "tripItemId": 1,
+            "tripItemDescription": "Discover Pulau Singapore",
+            "tripItemId": 5,
             "tripItemTime": "10:00:00"
           }
         ],
@@ -57,7 +57,7 @@ const SlidingImagePulauUbin = () => {
         showBullets={true}
         showNavs={true}
       />
-      <p><button className = "button">Add to Cart 🛒</button></p>
+      <p><button onClick={sendcart} className="button">Add to Cart 🛒</button></p>
     </div>
   );
 }

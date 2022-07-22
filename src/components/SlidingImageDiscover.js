@@ -25,28 +25,20 @@ const SlidingImageDiscover = (props) => {
         Authorization: `Bearer ${token}`} 
       }
   
-      const iJSON =  ({
-        "premadeTripItems": [
-          {
-            "tripItemDays": 1,
-            "tripItemDescription": "string",
-            "tripItemId": 4,
-            "tripItemTime": "21:12:00"
-          }
-        ],
+      const iJSON =  {
         "tripCode": "Discover",
         "tripCountry": "Singapore",
-        "tripDuration": 2,
+        "tripDuration": 5,
         "tripItemsList": [
           {
             "tripItemDays": 1,
-            "tripItemDescription": "string",
+            "tripItemDescription": "Discover old Singapore",
             "tripItemId": 4,
-            "tripItemTime": "21:12:00"
+            "tripItemTime": "10:00:00"
           }
         ],
         "tripName": "string"
-      });
+      };
   
       axios.post(
         `/api/v1/premadetrip`, 
