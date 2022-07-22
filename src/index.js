@@ -41,7 +41,7 @@ root.render(
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<App />} />
-        <Route path="/login" element={< LoginPage/>} /> 
+        <Route path="/login" element={<LoginPage/>} /> 
         <Route path="/signup" element ={<SignupPage/>} />
         <Route path="/tourguide" element={<TourGuide />} />
         <Route path="/Mytrips" element={<TripsPages />} />

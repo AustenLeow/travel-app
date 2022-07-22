@@ -180,6 +180,7 @@
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
+  /* align-items: center; */
 }
 
 .nav-item:after {
@@ -234,6 +235,7 @@
     padding: 1.5rem;
     width: 100%;
     display: table;
+    align-items: center;
   }
 
   .nav-icon {
