@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import Card from "../components/Card"
 import Home from "../components/Home.js"
+import "./traveltips.css"
 
 
 function TravelTips(props) {
@@ -15,12 +16,18 @@ function TravelTips(props) {
     <div className="App">
       <Header />
       <div className="App-body">
-        <li>Covid-19 Tests</li>
-        <li>Transport around Singapore</li>
-        <li>Events in Singapore this month</li>
-        <li>WiFi & SIM cards</li>
-        <li>Singapore must-knows</li>
-        <li>FAQs</li>
+        <h1>Covid-19 Tests</h1>
+
+        <h1>Transport around Singapore</h1>
+
+        <h1>Events in Singapore this month</h1>
+
+        <h1>WiFi & SIM cards</h1>
+
+        <h1>Singapore must-knows</h1>
+
+        <h1>Need help?</h1>
+        <p>Please do not hesitate to email us <u>wanderlust@outlook.com.sg</u>. Any feedback on this webpage is welcomed via email too!</p>
       </div>
     </div>
   );
