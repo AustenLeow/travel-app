@@ -5,6 +5,7 @@ import ubin3 from "../images/ubin3.jpg"
 import ubin4 from "../images/ubin4.jpg"
 import ubin5 from "../images/ubin5.jpg"
 import ubin6 from "../images/ubin6.jpg"
+import axios from "axios"
 
 const images = [
   { url: ubin1 },
@@ -16,6 +17,37 @@ const images = [
 ];
 
 const SlidingImagePulauUbin = () => {
+
+  function sendcart(){
+    const token =localStorage.getItem("Token")
+    const config = {
+      headers: {
+        Authorization: `Bearer ${token}`} 
+      }
+  
+      const iJSON =  {
+        "tripCode": "Pulau",
+        "tripCountry": "Singapore",
+        "tripDuration": 5,
+        "tripItemsList": [
+          {
+            "tripItemDays": 1,
+            "tripItemDescription": "Discover Ubin,Singapore",
+            "tripItemId": 1,
+            "tripItemTime": "10:00:00"
+          }
+        ],
+        "tripName": "string"
+      };
+  
+      axios.post(
+        `/api/v1/premadetrip`, 
+        iJSON,config
+      ).then(data => console.log(data.data)).catch((error) => {
+        console.log(error);
+    })
+    }
+  
   return (
     <div>
       <SimpleImageSlider

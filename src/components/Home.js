@@ -53,7 +53,7 @@ function Home() {
           src={nat}
           title="National Day Discounts"
           description="Enjoy wonderful bundles on our national icons with wonderful discounts."
-          price="£130/night"
+          price="$130/night"
         />        
         </NavLink>
         <NavLink exact to="/RelaxInLuxury" onClick={handleClick}>
@@ -61,7 +61,7 @@ function Home() {
           src={spa}
           title="Relax in luxury"
           description="Spend your vacation in a modern, airy, modern spa this autumn."
-          price="£350/night"
+          price="$350/night"
         />
         </NavLink>
         <NavLink exact to="/Hawker" onClick={handleClick}>
@@ -69,7 +69,7 @@ function Home() {
           src={hawker}
           title="Celebrate our local culture by eating like a local"
           description="Spend your vacation in a unique neighborhood with a great local cuisine."
-          price="£70/night"
+          price="$70/night"
         />
         </NavLink>
       </div>
