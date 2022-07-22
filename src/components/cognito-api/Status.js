@@ -15,7 +15,7 @@ const Status = () => {
 
   return (
     <div>
-      {status ? <a class="nav-links" onClick={logout}>Logout</a>: ''}     {/* <button onClick={logout}>Logout</button> */}
+      {status ? <a class="nav-links" onClick={logout}>Log out?</a>: ''}     {/* <button onClick={logout}>Logout</button> */}
     </div>
   )
 };

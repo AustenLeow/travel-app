@@ -7,6 +7,8 @@ import Trips from './Trips'
 function TripsHome() {
     return (
         <div className='home'>
+            {/* <h1>My Profile</h1> */}
+            <h1>My past trips</h1>
             <div className='home__section'>
             <Trips
                 day = "Monday 13/6/2022"
@@ -60,4 +62,4 @@ function TripsHome() {
     )
 }
 
-export default TripsHome
+export default TripsHome;

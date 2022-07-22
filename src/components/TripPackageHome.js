@@ -30,6 +30,7 @@ function TripPackageHome() {
             src={sentosa}
             title="Chill at Sentosa"
             description="Enjoy a relaxing day at the beach at Sentosa"
+            price="FREE"
           />
         </NavLink>
         <NavLink exact to="/trippackage/HistoryThrill" onClick={handleClick}>
