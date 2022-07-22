@@ -16,9 +16,10 @@ function NationalDayDiscount(props) {
       <Header />
       <div className="Marina-body">
         <SlidingImageNationalDay />
-        <h2>Enjoy 10% off all Singapore attraction for the whole month of August</h2>
-        <h3>Ever tried Singapore's iconic attractions like the Singapore Farris Wheel or the Singapore Duck Tour? If not this is the best time to try as we are giving out huge discounts for Singapore attractions!</h3>
       </div>
+        <h2>Enjoy 10% off all Singapore attraction for the whole month of August</h2>
+        <p>Ever tried Singapore's iconic attractions like the Singapore Ferris Wheel or the Singapore Duck Tour? If not this is the best time to try as we are giving out huge discounts for Singapore attractions!</p>
+      
     </div>
   );
 }

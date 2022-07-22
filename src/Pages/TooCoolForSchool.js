@@ -16,9 +16,10 @@ function TooCoolForSchool(props) {
       <Header />
       <div className="Marina-body">
         <SlidingImageAdventureCove />
-        <h2>Bring your friends from school and enjoy 20% off Aventure Cover at Sentosa</h2>
-        <h3>Schools' out, funs' in. Make your way down to Sentosa and have a whale of a time at Adventure Cove as you can enjoy the rush of the rapids or choose to chill in the lazy river. Why not enjoy the waves at Spiral Washout. Come now to Adventure Cove and enjoy 20% off your tickets! </h3>
       </div>
+        <h2>Bring your friends from school and enjoy 20% off Aventure Cover at Sentosa</h2>
+        <p>Schools' out, funs' in. Make your way down to Sentosa and have a whale of a time at Adventure Cove as you can enjoy the rush of the rapids or choose to chill in the lazy river. Why not enjoy the waves at Spiral Washout. Come now to Adventure Cove and enjoy 20% off your tickets! </p>
+      
     </div>
   );
 }

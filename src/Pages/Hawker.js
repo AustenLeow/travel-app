@@ -16,9 +16,10 @@ function Hawker(props) {
       <Header />
       <div className="Marina-body">
         <SlidingImageHawker />
-        <h2>Discount coupons for big purchases at hawkers</h2>
-        <h3>Enjoy discounts on your favorite food like Chili Sting Ray, Satay and Roasted Chicken Wings when you buy $100 or more worth of food here at Newton Food Center. Hurry, while stocks last.</h3>
       </div>
+        <h2>Discount coupons for big purchases at hawkers</h2>
+        <p>Enjoy discounts on your favorite food like Chili Sting Ray, Satay and Roasted Chicken Wings when you buy $100 or more worth of food here at Newton Food Center. Hurry, while stocks last.</p>
+      
     </div>
   );
 }

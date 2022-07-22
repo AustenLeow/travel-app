@@ -18,7 +18,7 @@ function UniqueStays(props) {
         <SlidingImageUniqueStays />
       </div>
       <h2>Immerse yourself in one of Singapore's most unique overnight stays!</h2>
-      <h3>Ever wondered how it is like to sleep under the stars or staying under the sea? Book a overnight stay with us as we make your dream come true. These hotels are not only unique to Singapore, but some are even the only one in the whole world! Have an experience that you will never forget.</h3>
+      <p>Ever wondered how it is like to sleep under the stars or staying under the sea? Book a overnight stay with us as we make your dream come true. These hotels are not only unique to Singapore, but some are even the only one in the whole world! Have an experience that you will never forget.</p>
     </div>
   );
 }
