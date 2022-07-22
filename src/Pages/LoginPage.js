@@ -20,8 +20,10 @@ function LoginPage(props) {
 
     authenticate(email, password)
       .then(data => {
-      // console.log("Logged In!", data);
-      navigate('/');
+      console.log("Logged In!", data, data.tokens.accessToken);
+      // navigate('/');
+      localStorage.clear()
+     localStorage.setItem("Token",data.tokens.accessToken) 
     }).catch(err => {
       alert("Invalid username/password!");
       console.error(err);
