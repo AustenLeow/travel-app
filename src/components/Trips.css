@@ -46,3 +46,10 @@
     background-color: #f0c040;
     cursor: pointer;
   }
+
+  .tripsinfo p {
+      margin-left: 20px;
+      margin-right: 0px;
+      /* text-align: justify; */
+ 
+  }
