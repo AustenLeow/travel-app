@@ -16,9 +16,9 @@ function PulauUbin(props) {
       <Header />
       <div className="Marina-body">
         <SlidingImagePulauUbin />
-        <h2>Enjoy the beaches and the eco-diversity of Pulau Ubin</h2>
-        <h3>Take a boat from Changi Village and rent a bicycle from a local bicycle rental shop as you enjoy the scenery and the bio-diversity of the animals and plants living there. You can follow the trail as they take you on a path to explore nature's greatest gift all in one island. Lastly, enjoy a freshly cooked meal with herbs and fishes all grown in Pulau Tekong, cooked by a local chef renowed for his stir-fried rice.</h3>
       </div>
+        <h2>Enjoy the beaches and the eco-diversity of Pulau Ubin</h2>
+        <p>Take a boat from Changi Village and rent a bicycle from a local bicycle rental shop as you enjoy the scenery and the bio-diversity of the animals and plants living there. You can follow the trail as they take you on a path to explore nature's greatest gift all in one island. Lastly, enjoy a freshly cooked meal with herbs and fishes all grown in Pulau Tekong, cooked by a local chef renowed for his stir-fried rice.</p>
     </div>
   );
 }
