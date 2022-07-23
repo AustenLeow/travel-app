@@ -30,6 +30,7 @@ function TourGuideHome() {
                 price="⭐️⭐️⭐️⭐️"
             />
             </div>
+            <p><b><i>Note: Tour guides are not for sale here. You have to contact them personally for their services.</i></b></p>
         </div>
     )
 }
