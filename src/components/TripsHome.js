@@ -18,8 +18,6 @@ function TripsHome() {
                 price="$130/entry"
                 tourguide = "Sten"
             />
-<<<<<<< HEAD
-=======
             <Trips
                 day = "14/6/2022"
                 src="https://a0.muscache.com/im/pictures/15159c9c-9cf1-400e-b809-4e13f286fa38.jpg?im_w=720"
@@ -55,11 +53,10 @@ function TripsHome() {
             <Trips
                 day = "13/6/2022"
                 src="https://media.nomadicmatt.com/2018/apartment.jpg"
-                title="Singapore Zoo tour"
+                title="Singapore Orhcard staycation"
                 description="Superhost with great amenities and a fabolous shopping complex nearby"
                 price="$70/entry"
             />
->>>>>>> b7ec0aedcf3b21bd283a19ce2fcaff111ed38c46
             </div>
         </div>
     )

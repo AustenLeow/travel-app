@@ -1,4 +1,4 @@
-]import React, { useState } from "react";
+import React, { useState } from "react";
 import "./Home.css";
 import Card from "./Card";
 import family from "../images/family.jpg";

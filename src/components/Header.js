@@ -1,4 +1,4 @@
-\import React, { useState, useContext } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Status from "./cognito-api/Status";
 import { AccountContext } from "../components/cognito-api/Account";
