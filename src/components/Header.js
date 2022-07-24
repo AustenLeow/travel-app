@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+\import React, { useState, useContext } from "react";
 import { NavLink } from "react-router-dom";
 import Status from "./cognito-api/Status";
 import { AccountContext } from "../components/cognito-api/Account";
@@ -55,17 +55,29 @@ function Header(props) {
                 </NavLink>
               </li>
             )}
-            {!isLoggedIn && (
+            {isLoggedIn && (
               <li className="nav-item">
                 <NavLink
-                  
-                  to="/signup"
+                  exact
+                  to="/mytrips"
                   className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
                   onClick={handleClick}
                 >
-                  Sign up
+                  My Account
                 </NavLink>
-              </li> 
+              </li>
+              )}
+              {!isLoggedIn && (
+                <li className="nav-item">
+                  <NavLink
+                    
+                    to="/signup"
+                    className={({ isActive }) => "nav-links" + (isActive ? " active" : "")}
+                    onClick={handleClick}
+                  >
+                    Sign up
+                  </NavLink>
+                </li> 
               )}
               {!isLoggedIn && (
                 <li className="nav-item">
@@ -80,7 +92,7 @@ function Header(props) {
               </li> 
               )}
               {isLoggedIn && (
-                <li >
+                <li>
                 <NavLink
                   to="/"
                   
@@ -132,7 +144,7 @@ function Header(props) {
                 Travel Tips
               </NavLink>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <NavLink
                 exact
                 to="/mytrips"
@@ -141,7 +153,7 @@ function Header(props) {
               >
                 My Trips
               </NavLink>
-            </li>
+            </li> */}
           </ul>
           <div className="nav-icon" onClick={handleClick}>
             <i className={click ? "fas fa-times" : "fas fa-bars"}></i>

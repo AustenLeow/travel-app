@@ -15,11 +15,9 @@ const Status = () => {
 
   return (
     <div>
-      {status ? <button onClick={logout}>Logout</button>: ""}     {/* <button onClick={logout}>Logout</button> */}
+      {status ? <a class="nav-links" onClick={logout}>Log out?</a>: ''}     {/* <button onClick={logout}>Logout</button> */}
     </div>
   )
 };
 
-export default Status
-
-
+export default Status;

@@ -7,12 +7,15 @@ function Trips({ day, src, title, description, price , tourguide }) {
     return (
         <div className='card'>
             <img src={src} alt="" />
+            
             <div className="trips__info">
-                <h2>{day}</h2>
+                
                 <h2>{title}</h2>
-                <h4>{description}</h4>
-                <h3>{price}</h3>
-                <h3>{tourguide}</h3>
+                <div className="tripsinfo">
+                    <p>Date: {day}</p>
+                    <p>Price: {price}</p>
+                    <p>Tour Guide (if any): {tourguide}</p>
+                </div>
             </div>
         </div>
     )
