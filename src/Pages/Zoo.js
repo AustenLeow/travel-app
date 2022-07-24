@@ -18,8 +18,8 @@ function Zoo(props) {
         <SlidingImageZoo />
       </div>
       <h2>Home to the famous Ah-Meng</h2>
-      <h3>Take a trip down to Singapore's very own zoo to meet and interact with various animals ranging from giraffs to night owls. 
-      </h3>
+      <p>Take a trip down to Singapore's very own zoo to meet and interact with various animals ranging from giraffs to night owls. 
+      </p>
     </div>
   );
 }

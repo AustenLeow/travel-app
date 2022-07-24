@@ -26,7 +26,7 @@ const SlidingImageAdventureCove = (props) => {
         showBullets={true}
         showNavs={true}
       />
-      <p><button class = "button" onClick={onAdd}>Add to Cart 🛒</button></p>
+      {/* <p><button class = "button" onClick={onAdd}>Add to Cart 🛒</button></p> */}
     </div>
   );
 }

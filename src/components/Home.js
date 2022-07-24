@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+]import React, { useState } from "react";
 import "./Home.css";
 import Card from "./Card";
 import family from "../images/family.jpg";
@@ -18,14 +18,14 @@ function Home() {
 
   return (
     <div className="home">
-    <div><h1>What we offer</h1></div>
+    <div><h1>Ongoing promotions / events</h1></div>
       <div className="home__section">
         
         
         <NavLink exact to="/bigdiscountforfamilies" onClick={handleClick}>
           <Card
             src={family}
-            title="Big Discount for families"
+            title="Discount for families"
             description="Spend your vacation with your family and get a great discount on your next stay."
           />
         </NavLink>
@@ -40,35 +40,35 @@ function Home() {
         <Card
           src={wet}
           title="Too cool for school"
-          description="Spend your vacation with your friends at water parks and get a great discount"
+          description="Spend your vacation with your friends at water parks and get a great discount."
         />
         </NavLink>
         
       </div>
-      <div><h1>Our latest deals</h1></div>
+      <div><h1>Hottest trip packages</h1></div>
       <div className="home__section">
       
         <NavLink exact to="/NationalDayDiscount" onClick={handleClick}>
         <Card
           src={nat}
-          title="National Day Discounts"
-          description="Enjoy wonderful bundles on our national icons with wonderful discounts."
+          title="National Day partyyy at Marina"
+          description="Party like there's no tomorrow near Singapore's most famous skyline."
           price="$130/night"
         />        
         </NavLink>
         <NavLink exact to="/RelaxInLuxury" onClick={handleClick}>
         <Card
           src={spa}
-          title="Relax in luxury"
-          description="Spend your vacation in a modern, airy, modern spa this autumn."
+          title="Spa-cation at Orchard"
+          description="'Chill' in a modern, airy, modern spa this summer."
           price="$350/night"
         />
         </NavLink>
         <NavLink exact to="/Hawker" onClick={handleClick}>
         <Card
           src={hawker}
-          title="Celebrate our local culture by eating like a local"
-          description="Spend your vacation in a unique neighborhood with a great local cuisine."
+          title="Experience local at Chinatown"
+          description="Role play as a local in a popular neighborhood."
           price="$70/night"
         />
         </NavLink>

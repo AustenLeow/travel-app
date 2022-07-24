@@ -18,7 +18,7 @@ function MarinaExperience(props) {
         <SlidingImageHistoryThrills />
       </div>
       <h2>Take a tour down memory lane and learn more about the history of Fort Canning Park</h2>
-      <h3>Learn more about the history of Fort Canning Park and its importance during the second world war. Immerse yourself as Fort Canning Park brings history to you by recreating the moment when the British surrdendered to the Japanese or enjoy one of the performance at NParks Concert Series in Fort Cannning Park.</h3>
+      <p>Learn more about the history of Fort Canning Park and its importance during the second world war. Immerse yourself as Fort Canning Park brings history to you by recreating the moment when the British surrdendered to the Japanese or enjoy one of the performance at NParks Concert Series in Fort Cannning Park.</p>
     </div>
   );
 }

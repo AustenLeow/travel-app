@@ -16,9 +16,10 @@ function RelaxInLuxury(props) {
       <Header />
       <div className="Marina-body">
         <SlidingImageRelaxInLuxury />
-        <h2>Enjoy luxurious spa at great discounts when you bring a friend</h2>
-        <h3>It is time for you and your friends to reward yourself at the spa after a long day's of work. Relax and recuperate your muscles and mind with massages provided by worldclass masseurs. Add an additional patented herbal oil to your massage to improve your experience at the spa. All these experience will be availble at a 20% discount only in the month of July.</h3>
       </div>
+        <h2>Enjoy luxurious spa at great discounts when you bring a friend</h2>
+        <p>It is time for you and your friends to reward yourself at the spa after a long day's of work. Relax and recuperate your muscles and mind with massages provided by worldclass masseurs. Add an additional patented herbal oil to your massage to improve your experience at the spa. All these experience will be availble at a 20% discount only in the month of July.</p>
+      
     </div>
   );
 }

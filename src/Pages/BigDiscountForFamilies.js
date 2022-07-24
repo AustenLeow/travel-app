@@ -17,10 +17,10 @@ function BigDiscountForFamilies(props) {
   return (
     <div className="App">
       <Header />
-      <div className="BigFamiliesImages">
+      <div className="Marina-body">
         <SlidingImageBigFamilies/>
       </div>
-      <h3>Big Discount for families up to 50% off attractions</h3>
+      <h2>Big Discount for families up to 50% off attractions</h2>
     </div>
   );
 }

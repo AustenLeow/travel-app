@@ -5,7 +5,8 @@ import Header from "../components/Header";
 import Card from "../components/Card"
 import Home from "../components/Home.js"
 import SlidingImage from "../components/SlidingImage";
-import Pages from "./Pages.css"
+import Pages from "./Pages.css";
+import "./Marina.css";
 
 
 function MarinaExperience(props) {
@@ -20,7 +21,7 @@ function MarinaExperience(props) {
         <SlidingImage />
       </div>
       <h2>1 night marina experience in Singapore's Central Business District</h2>
-      <h3>Enjoy a cool and relaxing night while breezing through Singapore Central Business District in a private boat with your family or friends.</h3>
+      <p>Enjoy a cool and relaxing night while breezing through Singapore Central Business District in a private boat with your family or friends.</p>
     </div>
   );
 }

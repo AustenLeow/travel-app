@@ -22,7 +22,7 @@ const SlidingImageUniqueStays = () => {
         showBullets={true}
         showNavs={true}
       />
-      <p><button class = "button">Add to Cart 🛒</button></p>
+      {/* <p><button class = "button">Add to Cart 🛒</button></p> */}
     </div>
   );
 }

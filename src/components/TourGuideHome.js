@@ -13,23 +13,24 @@ function TourGuideHome() {
             <div className='home__section'>
             <Card
                 src={austen}
-                title="Austen Leow"
-                description="The utilmate guide. He maybe new, but he knows his way around Singapore."
-                price="$50/day"
+                title="Dick Harrison"
+                description="Expert in local food. Message @DH on telegram to contact me."
+                price="⭐️⭐️⭐️⭐️⭐️"
             />
             <Card
                 src={nat}
                 title="Nat Ho"
-                description="5 years of experiences of local tours. He has Singapore's history and geography remembered at the back of his head."
-                price="$100/day"
+                description="Specialise in tourist attractions. Contact me +6581234567."
+                price="⭐️⭐️⭐️"
             />
             <Card
                 src={kelvin}
                 title="Kelly Lim"
-                description="Anywhere you like to go, she has got you covered. She knows Singapore like the back of her hand"
-                price="$120/day"
+                description="Loves exploring Singapore's creepiest districts. Whatsapp me +6591234567."
+                price="⭐️⭐️⭐️⭐️"
             />
             </div>
+            <p><b><i>Note: Tour guides are not for sale here. You have to contact them personally for their services.</i></b></p>
         </div>
     )
 }
