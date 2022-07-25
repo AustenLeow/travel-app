@@ -9,7 +9,7 @@ Through this app, we hope to simplify travel planning by providing local tourist
 - Cart functionalities
 - Tour guides listing
 
-## Tech stack
+### Tech stack
 - Frontend: React
 - Backend: Spring Boot
 - Cloud: AWS
