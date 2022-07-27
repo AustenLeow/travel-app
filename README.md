@@ -36,5 +36,6 @@ Through this app, we hope to simplify travel planning by providing local tourist
 Feel free to contact any of us via Telegram -> @tan2heng / @tansoonann / @austenleow / @whyell / @ryannhjj
 
 ## **Improvements to be made**
+- add to cart
 - cart checkout
-- user account settings
+- user account
