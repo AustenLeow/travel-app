@@ -15,7 +15,7 @@ Through this app, we hope to simplify travel planning by providing local tourist
 ### (frontend)
 1. download the whole directory, open your terminal in the outermost directory, execute `npm install` to install the required node_modules
 2. in package.json file, check above `"dependencies"`, there is `"proxy": "https://travel.potatovault.com",`
-3. prepare to install react packages (listed below) by executing `npm install ______`
+3. prepare to install react packages (listed below) by executing `npm install ______` in the terminal
 - amazon-cognito-identity-js
 - react-router-dom
 - react-simple-image-slider
