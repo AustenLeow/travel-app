@@ -1,4 +1,6 @@
-# Wanderlust - travel plans made simple
+# Wanderlust - a Travel App
+
+<i>Note: This is the main and frontend repository for the app. The seperate backend repository can be found in this <a href="https://github.com/soonann/travel-app-backend">link</a>.</i>
 
 ## **Introduction**
 Through this app, we hope to simplify travel planning by providing local tourists with a selection of premade itinerary bundles and tour guides. This means they can just fully focus on having a wonderful holiday experience without worrying about the need to plan their trips beforehand. At the same time, this initiative can help to revive Singapore's tourism industry by providing tour guides or businesses with a chance to feature their services here.
@@ -12,6 +14,7 @@ Through this app, we hope to simplify travel planning by providing local tourist
 ### Tech stack
 - Frontend: React
 - Backend: Spring Boot
+- Database: Postgresql
 - Cloud: AWS
 
 ## **Installations (packages/dependencies)**
@@ -27,6 +30,7 @@ Through this app, we hope to simplify travel planning by providing local tourist
 
 (backend) Spring:
 - API documentation: https://app.swaggerhub.com/apis/heap-travelapp/api-documentation/1.0
+- backend repository: https://github.com/soonann/travel-app-backend
 
 ## **Need help?**
 Feel free to contact any of us via Telegram -> @tan2heng / @tansoonann / @austenleow / @whyell / @ryannhjj
