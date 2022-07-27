@@ -53,7 +53,7 @@ function Header(props) {
                   className="nav-links"
                   onClick={handleClick}
                 >
-                  My Cart
+                  Buy Tickets
                 </NavLink>
               </li>
             )}
