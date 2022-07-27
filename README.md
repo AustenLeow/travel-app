@@ -18,17 +18,17 @@ Through this app, we hope to simplify travel planning by providing local tourist
 - Cloud: AWS
 
 ## **Installations (packages/dependencies)**
-### (frontend) React:
-1. download the whole directory, open your terminal in the outermost directory, execute <span style="color:blue">npm install</span> to install the required node modules
-2. in package.json file, above "dependencies", add <span style="color:blue">"proxy": "https://travel.potatovault.com",</span>
-3. prepare to install react packages (listed below) by executing <span style="color:blue">npm install ______</span>
+### (frontend)
+1. download the whole directory, open your terminal in the outermost directory, execute `npm install` to install the required node_modules
+2. in package.json file, above `"dependencies"`, add `"proxy": "https://travel.potatovault.com",`
+3. prepare to install react packages (listed below) by executing `npm install ______`
 - amazon-cognito-identity-js
 - react-router-dom
 - react-simple-image-slider
 - axios
 - react-use-cart
 
-(backend) Spring:
+(backend)
 - API documentation: https://app.swaggerhub.com/apis/heap-travelapp/api-documentation/1.0
 - backend repository: https://github.com/soonann/travel-app-backend
 
