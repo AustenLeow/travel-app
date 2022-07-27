@@ -5,12 +5,6 @@
 ## **Introduction**
 Through this app, we hope to simplify travel planning by providing local tourists with a selection of premade itinerary bundles and tour guides. This means they can just fully focus on having a wonderful holiday experience without worrying about the need to plan their trips beforehand. At the same time, this initiative can help to revive Singapore's tourism industry by providing tour guides or businesses with a chance to feature their services here.
 
-### Main Features:
-- User accounts
-- Premade trip packages
-- Cart functionalities
-- Tour guides listing
-
 ### Tech stack
 - Frontend: React
 - Backend: Spring Boot
